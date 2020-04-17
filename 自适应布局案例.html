@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .layout{
+            width: 500px;
+            height: 600px;
+            background-color: #CCCCCC;
+
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        header{
+            height: 100px;
+            width: 100%;
+            background: yellow;
+        }
+
+        main{
+            flex: 1;
+            width: 100%;
+            background: red;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        main article{
+            flex: 1;
+            height: 100%;
+            background: grey;
+        }
+
+        main aside{
+            flex: 4;
+            height: 100%;
+            background: indianred;
+        }
+    
+        footer{
+            height: 100px;
+            width: 100%;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header></header>
+        <main>
+            <article></article>
+            <aside></aside>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
